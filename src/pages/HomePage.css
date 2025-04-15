@@ -1,0 +1,73 @@
+.header-buttons {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.add-post-button {
+    background-color: #3B82F6; 
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    position: absolute; 
+    top: 20px;
+    right: 20px; 
+    margin-top: 0; 
+}
+
+.add-post-button:hover {
+    background-color: #2563EB; 
+    transform: scale(1.03); 
+}
+
+.sign-out-button {
+    background-color: #e74c3c;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 140px;
+    margin-top: 0;
+}
+
+.sign-out-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.03);
+}
+
+
+@media (max-width: 768px) {
+    .add-post-button {
+        font-size: 0.875rem; 
+        padding: 8px 16px;
+        top: 10px; 
+        right: 10px; 
+    }
+    .sign-out-button {
+        font-size: 0.875rem;
+        padding: 8px 16px;
+        top: 10px;
+        right: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-post-button,
+    .sign-out-button {
+        position: static;
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
+}
